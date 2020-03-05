@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Martin Ritsberg</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="preload">
+    <main id="content-container">
+        <section class="content-section hidden" id="about">
+            <h1 class="section-title">
+                Martin Ritsberg
+            </h1>
+            <div id="portrait"></div>
+            <div class="card">
+                <p>
+                    I'm an aspiring software developer and this is my portfolio, wherein I endeavor to give an overview of my personal and professional development and my current skill set.
+                </p>
+                <hr>
+                <p>
+                    I enjoy working with computers and solving problems with logic and analysis. This has led me down a path, where I started out doing part-time work with hardware and providing IT support to managing software projects and network infrastructure for a local firm to now striking out to become a software developer.
+                </p>
+                <hr>
+                <p>
+                    As a person I'm calm and analytical. I'm short on small talk, but in a work environment I'm proactive. In conflict situations I remain impersonal and focused on the problem. That said, I do enjoy bonding on topics that I enjoy: science, technology and video games.
+                </p>
+            </div>
+        </section>
+        <section class="content-section hidden" id="skills">
+            <h2 class="section-title">
+                Skills
+            </h2>
+            <div id="skills-container" class="card">
+                <div class="skill">
+                    <h3>HTML + CSS</h3>
+                    <p class="skill-description">
+                        Proficient with HTML structure. Able to create CSS animations, use flexbox, grid containers. Familiar with SCSS and templating engines like PUG, EJS.
+                    </p>
+                    <p class="skill-confidence">
+                        Confidence: High
+                    </p>
+                </div>
+                <hr>
+                <div class="skill">
+                    <h3>Javascript</h3>
+                    <p class="skill-description">
+                        Proficient with JS syntax, including ES6, and DOM structure. Familiar with asynchronous functions.
+                    </p>
+                    <p class="skill-confidence">
+                        Confidence: Independent
+                    </p>
+                </div>
+                <hr>
+                <div class="skill">
+                    <h3>PHP</h3>
+                    <p class="skill-description">
+                        Competent at PHP syntax. Familiar with PDO, sessions and handling user input.
+                    </p>
+                    <p class="skill-confidence">
+                        Confidence: Room for improvement
+                    </p>
+                </div>
+                <hr>
+                <div class="skill">
+                    <h3>SQL</h3>
+                    <p class="skill-description">
+                        Proficient at writing queries, creating database structures. Familiar with views, procedures, triggers, indexes.
+                    </p>
+                    <p class="skill-confidence">
+                        Confidence: High
+                    </p>
+                </div>
+                <hr>
+                <div class="skill">
+                    <h3>Node.JS</h3>
+                    <p class="skill-description">
+                        Knowledge of basic routing, using rendering engines. Learning about database integration, handling user inputs.
+                    </p>
+                    <p class="skill-confidence">
+                        Confidence: Actively learning
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content-section hidden" id="work">
+            <h2 class="section-title">
+                My Work
+            </h2>
+            <div id="work-container">
+                <a href="https://ritsbergmartin.ikt.khk.ee/jquery/aardekaart.html" target="_blank" class="work card">
+                    <h3>Minesweeper</h3>
+                    <div class="work-thumbnail">
+                        <img src="img/Minesweeper.png" alt="Minesweeper">
+                    </div>
+                    <p class="work-description">
+                        A minesweeper game built with HTML, CSS and Javascript.
+                    </p>
+                </a>
+                <a href="https://ritsbergmartin.ikt.khk.ee/ajax" target="_blank" class="work card">
+                    <h3>Course schedule from API</h3>
+                    <div class="work-thumbnail">
+                        <img src="img/schedule.PNG" alt="Minesweeper">
+                    </div>
+                    <p class="work-description">
+                        A course schedule viewer that relies on an API for data.
+                    </p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <aside id="sidebar" class="collapsed">
+        <div id="sidebar-toggle">
+            <div id="sidebar-toggle-btn" class="collapsed">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <nav id="sidebar-nav">
+            <a href="#" class="main-nav-btn" data-section="about">About me</a>
+            <a href="/files/CV-Europass-Ritsberg-EN.pdf" class="main-nav-btn" target="_blank">Résumé</a>
+            <a href="#" class="main-nav-btn" data-section="skills">Skills</a>
+            <a href="#" class="main-nav-btn" data-section="work">My Work</a>
+        </nav>
+        <footer id="sidebar-contact">
+            <a class="sidebar-contact-item" href="mailto:martin.ritsberg@khk.ee">Email me</a>
+        </footer>
+    </aside>
+
+    <script src="js/navigation.js"></script>
+</body>
+</html>
