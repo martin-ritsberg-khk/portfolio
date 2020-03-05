@@ -44,10 +44,10 @@ hr
     flex-flow: column
     justify-content: space-around
     align-items: center
-    transition: right 2s
+    transition: transform 1s
     &.collapsed
         @media screen and ( max-width: $break-large )
-            right: $sidebar-border-width - $sidebar-width
+            transform: translatex( - $sidebar-border-width + $sidebar-width )
     
     #sidebar-toggle
         opacity: 0
@@ -62,6 +62,10 @@ hr
         transition: opacity 2s;
         @media screen and ( max-width: $break-large  )
             opacity: 1
+        @media screen and ( max-height: $break-vertical ), ( max-width: $break-small )
+            width: 360px
+            height: 70px
+            left: -60px
         #sidebar-toggle-btn
             position: relative
             display: flex
